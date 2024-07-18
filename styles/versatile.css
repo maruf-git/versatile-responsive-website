@@ -1,0 +1,226 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+/* miama font */
+@import url('https://fonts.cdnfonts.com/css/miama');
+/* font-family: 'Miama', sans-serif; */
+
+/* default styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    /* background-color: black; */
+}
+
+/* header styles */
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    padding-top: 45px;
+}
+
+/* shared styles */
+.container {
+    width: 85%;
+    /* border: 2px solid green; */
+    margin: 0 auto;
+}
+
+.display-none {
+    display: none;
+}
+
+.primary-btn {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 12px 25px;
+}
+
+/* navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    /* margin-top:45px; */
+}
+
+.brand {
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.menu {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 20px 5px;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 47px;
+
+}
+
+.menu-links li {
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+}
+
+
+#home-link {}
+
+.bars {
+    font-weight: 900;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* hero styles */
+.hero {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom:100px;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 4.87rem;
+    font-weight: 900;
+}
+
+#shape {
+    font-family: 'Miama', sans-serif;
+    font-size: 4.87rem;
+    font-weight: 400;
+}
+
+.hero-description {
+    margin-bottom: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#download-btn {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 11px 25px;
+    margin-left: 14px;
+}
+
+.hero-right {
+    background-image: url("../images/hero.png");
+    width: 50%;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position:relative;
+}
+.video {
+    color: white;
+    padding: 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 150px;
+}
+.video-count {
+    /* margin-bottom: 339px; */
+    position: absolute;
+    top: 130px;
+    right: 40px;
+}
+.video-count h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.video-tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 445px;
+    left: 25px;
+}
+.fa-circle{
+    font-size:2.5rem;
+    color:rgb(230, 83, 60);
+}
+.video-tutorial h3{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.video-des {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.81rem;
+}
+
+/* responsive */
+@media only screen and (max-width:576px) {
+
+    /* navbar responsive */
+    .menu {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    /* hero responsive */
+    .hero {
+     
+    }
+    
+    .hero-left {
+        
+    }
+    
+    .hero-title {
+        
+    }
+    
+    #shape {
+        
+    }
+    
+    .hero-description {
+        
+    }
+    
+    #download-btn {
+       
+    }
+    
+}
