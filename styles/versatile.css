@@ -151,12 +151,16 @@ header {
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
     width: 150px;
+    height: 50px;
 }
 .video-count {
     /* margin-bottom: 339px; */
     position: absolute;
     top: 130px;
     right: 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 .video-count h3 {
     color: rgb(255, 255, 255);
@@ -189,6 +193,9 @@ header {
 /* responsive */
 @media only screen and (max-width:576px) {
 
+    .container{
+        width:95%;
+    }
     /* navbar responsive */
     .menu {
         display: none;
@@ -200,21 +207,23 @@ header {
     
     /* hero responsive */
     .hero {
-     
+        flex-direction: column;
+        align-items:start;
     }
     
     .hero-left {
-        
+        width:100%;
     }
     
     .hero-title {
-        
+        color: rgb(255, 255, 255);
+        font-size: 1.87rem;
+        font-weight: 900;
     }
-    
     #shape {
-        
+        font-size: 1.87rem;
+        font-weight: 400;
     }
-    
     .hero-description {
         
     }
@@ -222,5 +231,21 @@ header {
     #download-btn {
        
     }
-    
+    .hero-right {
+        width: 100%;
+        margin-top:50px;
+    }
+    .video {
+        padding: 12px 25px;
+        width: 130px;
+        height: 60px;
+    }
+    .video-count {
+       
+        top: 38px;
+        right: 4px;
+    }
+    .video-tutorial {
+        top: 263px;
+    }
 }
