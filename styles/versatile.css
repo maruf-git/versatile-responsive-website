@@ -190,8 +190,45 @@ header {
     font-size: 0.81rem;
 }
 
+/* habit styles */
+.habit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:90px;
+}
+.habit-text-container {
+    width: 55%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom:35px;
+}
+.habit-title{
 
-
+}
+.habit-des{
+    
+}
+.habit-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items:center;
+    align-items:center;
+    gap:35px;
+}
+.habit-card{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+}
+.habit-card img{
+    border-radius:50%;
+}
 /* responsive */
 @media only screen and (max-width:576px) {
 
