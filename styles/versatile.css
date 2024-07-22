@@ -373,4 +373,14 @@ header {
     .join-now{
         
     }
+    /* bmi-calc responsive */
+    .bmi-calc-container{
+        width:100%;
+    }
+    .bmi-calc-title{
+        font-size:2.8rem;
+    }
+    .bmi-calc-des{
+        font-size:1rem;
+    }
 }
