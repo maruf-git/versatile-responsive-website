@@ -14,7 +14,7 @@
 }
 
 body {
-    /* background-color: black; */
+    background-color: black;
 }
 
 /* header styles */
@@ -208,7 +208,7 @@ header {
     margin-bottom:35px;
 }
 .habit-title{
-
+    
 }
 .habit-des{
     
@@ -228,6 +228,42 @@ header {
 }
 .habit-card img{
     border-radius:50%;
+}
+/* run styles */
+.run {
+    display: flex;
+    /* gap: 99px; */
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 30px;
+    justify-content: space-between;
+    height: 285px;
+}
+.run-left{
+   width:40%;
+}
+.run-title{
+    color:white;
+    font-size:3.87rem;
+}
+.run-des{
+    margin-bottom:30px;
+    color:white;
+    font-size:1.125rem;
+}
+.run-title{}
+.run-des{}
+.run-right{
+    width:435px;
+}
+
+.run-right .img-container{
+    width:100%;
+}
+.run-right .img-container img {
+    width: 100%;
+    border-radius: 15px;
+    
 }
 /* responsive */
 @media only screen and (max-width:576px) {
@@ -294,5 +330,29 @@ header {
     .habit-cards{
         grid-template-columns: repeat(1,1fr);
         width:65%;
+    }
+
+    /* run responsive */
+    .run{
+        flex-direction: column;
+        height:auto;
+        padding:0;
+    }
+    .run-left{
+        width:auto;
+        padding:25px;
+    }
+    .run-title{
+        font-size:2.8rem;
+    }
+    .run-des{
+        font-size:1rem;
+    }
+    .run-right {
+        width: auto;
+        padding: 25px;
+    }
+    .join-now{
+        
     }
 }
