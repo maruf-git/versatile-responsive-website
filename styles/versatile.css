@@ -664,5 +664,21 @@ hr{
     .team-members {
         grid-template-columns: repeat(1,1fr);
     }
+
+    /* footer responsive */
+    .footer-content{
+        flex-direction: column;
+        gap:30px;
+    }
+    .footer-left{
+        width:95%;
+    }
+    .footer-brand-des{
+        font-size:1.125rem;
+    }
+    .footer-right{
+        flex-direction:column;
+        gap:30px;
+    }
    
 }
