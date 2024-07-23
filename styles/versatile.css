@@ -26,7 +26,7 @@ header {
 /* shared styles */
 .container {
     width: 85%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 0 auto;
 }
 
@@ -216,9 +216,17 @@ header {
     margin-bottom: 35px;
 }
 
-.habit-title {}
+.habit-title {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
 
-.habit-des {}
+.habit-des {
+    color: white;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
 
 .habit-cards {
     display: grid;
@@ -583,7 +591,12 @@ hr{
     .habit-text-container {
         width: 85%;
     }
-
+    .habit-title {
+        font-size: 2rem;
+    }
+    .habit-des{
+        
+    }
     .habit-cards {
         grid-template-columns: repeat(1, 1fr);
         width: 65%;
