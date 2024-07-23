@@ -308,6 +308,7 @@ header {
 /* bmi styles */
 .bmi {
     background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom:90px;
 }
 
 .bmi-container {
@@ -497,5 +498,23 @@ input.primary-btn {
 
     .bmi-calc-des {
         font-size: 1rem;
+    }
+
+    /* bmi responsive */
+    .bmi-container {
+        flex-direction: column;
+    }
+    
+    .bmi-left {
+        margin-bottom:35px;
+    }
+    .bmi-right{
+        width:auto;
+    }
+    input, select {
+        width: 186px;
+    }
+    .gender{
+        width:200px;
     }
 }
