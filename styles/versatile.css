@@ -239,6 +239,15 @@ header {
     border-radius: 50%;
 }
 
+.habit-card-title {
+    color: white;
+    font-size: 1rem;
+}
+
+.habit-card-des {
+    color: white;
+}
+
 /* run styles */
 .run {
     display: flex;
@@ -308,7 +317,7 @@ header {
 /* bmi styles */
 .bmi {
     background-color: rgba(255, 255, 255, 0.7);
-    margin-bottom:90px;
+    margin-bottom: 90px;
 }
 
 .bmi-container {
@@ -366,14 +375,17 @@ header {
     margin-bottom: 30px;
     color: black;
 }
-.gender{
+
+.gender {
     width: 340px;
 }
-.activity{
-    width:100%;
+
+.activity {
+    width: 100%;
 }
 
-input, select {
+input,
+select {
     width: 326px;
     height: 40px;
     border-radius: 10px;
@@ -381,6 +393,7 @@ input, select {
     padding-left: 10px;
     /* margin-right: 10px; */
 }
+
 input.primary-btn {
     padding: 0;
     width: 135px;
@@ -388,6 +401,68 @@ input.primary-btn {
     height: 46px;
     cursor: pointer;
 }
+
+/* team styles */
+.team {
+    margin-bottom:90px;
+}
+
+.team-text-container {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.team-title {
+    color: white;
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+}
+
+.team-des {
+    color: white;
+    font-size: 1.125rem;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius:15px;
+    gap:15px;
+}
+.team-member {
+    position:relative;
+}
+
+.team-member .img-container {
+    width:100%;
+}
+
+.team-member .img-container img {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.team-member-details {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.team-member-name {
+    font-size: 1rem;
+}
+
+.team-member-post {
+    font-size: 1rem;
+}
+
 /* responsive */
 @media only screen and (max-width:576px) {
 
@@ -504,17 +579,21 @@ input.primary-btn {
     .bmi-container {
         flex-direction: column;
     }
-    
+
     .bmi-left {
-        margin-bottom:35px;
+        margin-bottom: 35px;
     }
-    .bmi-right{
-        width:auto;
+
+    .bmi-right {
+        width: auto;
     }
-    input, select {
+
+    input,
+    select {
         width: 186px;
     }
-    .gender{
-        width:200px;
+
+    .gender {
+        width: 200px;
     }
 }
