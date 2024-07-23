@@ -596,4 +596,19 @@ input.primary-btn {
     .gender {
         width: 200px;
     }
+
+    /* team responsive */
+    .team-text-container {
+        width: 95%;
+    }
+    .team-title{
+        font-size:2.8rem;
+    }
+    .team-des{
+
+    }
+    .team-members {
+        grid-template-columns: repeat(1,1fr);
+    }
+   
 }
