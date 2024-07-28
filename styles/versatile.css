@@ -44,12 +44,16 @@ header {
     padding: 12px 25px;
 }
 
+.dark-1 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 /* navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: 32px;
     /* margin-top:45px; */
 }
 
@@ -111,6 +115,7 @@ header {
     font-family: Inter;
     font-size: 4.87rem;
     font-weight: 900;
+    margin-bottom: 28px;
 }
 
 #shape {
@@ -120,8 +125,7 @@ header {
 }
 
 .hero-description {
-    margin-bottom: 28px;
-    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 35px;
     font-size: 1rem;
     font-weight: 400;
 }
@@ -146,13 +150,12 @@ header {
 
 .video {
     color: white;
-    padding: 20px 30px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
-    width: 150px;
-    height: 50px;
+    width: 193px;
+    height: 98px;
 }
 
 .video-count {
@@ -163,10 +166,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .video-count h3 {
-    color: rgb(255, 255, 255);
     font-size: 2.5rem;
     font-weight: 900;
 }
@@ -187,7 +190,6 @@ header {
 }
 
 .video-tutorial h3 {
-    color: rgb(250, 250, 249);
     font-size: 1.5rem;
     font-weight: 900;
 }
@@ -412,7 +414,7 @@ input.primary-btn {
 
 /* team styles */
 .team {
-    margin-bottom:90px;
+    margin-bottom: 90px;
 }
 
 .team-text-container {
@@ -435,18 +437,19 @@ input.primary-btn {
 
 .team-members {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius:15px;
-    gap:15px;
+    border-radius: 15px;
+    gap: 15px;
 }
+
 .team-member {
-    position:relative;
+    position: relative;
 }
 
 .team-member .img-container {
-    width:100%;
+    width: 100%;
 }
 
 .team-member .img-container img {
@@ -456,6 +459,7 @@ input.primary-btn {
     object-fit: cover;
     object-position: center;
 }
+
 .team-member-details {
     color: white;
     position: absolute;
@@ -472,59 +476,69 @@ input.primary-btn {
 }
 
 /* footer styles */
-footer{
+footer {
     background-color: gray;
 }
+
 .footer-content {
     display: flex;
     padding: 50px 0;
     gap: 250px;
 }
-.footer-left{
-    width:40%;
+
+.footer-left {
+    width: 40%;
 }
-.footer-brand{
+
+.footer-brand {
     color: rgb(230, 83, 60);
-    font-size:3.8rem;
-    margin-bottom:30px;
+    font-size: 3.8rem;
+    margin-bottom: 30px;
 }
-.footer-brand-des{
-    color:white;
-    font-size:1rem;
+
+.footer-brand-des {
+    color: white;
+    font-size: 1rem;
 }
+
 .footer-right {
     display: flex;
     justify-content: space-between;
     gap: 199px;
 }
-.get-started-container{
 
-}
-.get-started-title{
-    color:white;
-    font-size:1.8rem;
-    margin-bottom:30px;
+.get-started-container {}
+
+.get-started-title {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
 }
 
-.get-started-list{}
-.get-started-list li{
-    list-style:none;
+.get-started-list {}
+
+.get-started-list li {
+    list-style: none;
 }
+
 .get-started-list li a {
     text-decoration: none;
     color: white;
     font-size: 1.125rem;
     line-height: 32px;
 }
-hr{
-    color:white;
+
+hr {
+    color: white;
 }
-.copy-rights{
-    font-size:1rem;
-    color:white;
-    text-align:center;
-    padding:30px 0;
+
+.copy-rights {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
 }
+
 /* responsive */
 @media only screen and (max-width:576px) {
 
@@ -591,12 +605,13 @@ hr{
     .habit-text-container {
         width: 85%;
     }
+
     .habit-title {
         font-size: 2rem;
     }
-    .habit-des{
-        
-    }
+
+    .habit-des {}
+
     .habit-cards {
         grid-template-columns: repeat(1, 1fr);
         width: 65%;
@@ -668,30 +683,34 @@ hr{
     .team-text-container {
         width: 95%;
     }
-    .team-title{
-        font-size:2.8rem;
-    }
-    .team-des{
 
+    .team-title {
+        font-size: 2.8rem;
     }
+
+    .team-des {}
+
     .team-members {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* footer responsive */
-    .footer-content{
+    .footer-content {
         flex-direction: column;
-        gap:30px;
+        gap: 30px;
     }
-    .footer-left{
-        width:95%;
+
+    .footer-left {
+        width: 95%;
     }
-    .footer-brand-des{
-        font-size:1.125rem;
+
+    .footer-brand-des {
+        font-size: 1.125rem;
     }
-    .footer-right{
-        flex-direction:column;
-        gap:30px;
+
+    .footer-right {
+        flex-direction: column;
+        gap: 30px;
     }
-   
+
 }
