@@ -126,7 +126,8 @@
         <section class="bmi-calc container">
             <div class="bmi-calc-container">
                 <h3 class="bmi-calc-title">BMI Calculator</h3>
-                <p class="bmi-calc-des des">We believe fitness should be accessible to everyone, everywhere, regardless of
+                <p class="bmi-calc-des des">We believe fitness should be accessible to everyone, everywhere, regardless
+                    of
                     income or access to gym.</p>
             </div>
         </section>
@@ -164,15 +165,16 @@
                 </div>
                 <div class="bmi-right">
                     <h4 class="bmi-right-title bmi-title">Calculate Your BMI</h4>
-                    <p class="bmi-right-des des">We believe fitness should be accessible to everyone, everywhere, regardless
+                    <p class="bmi-right-des des">We believe fitness should be accessible to everyone, everywhere,
+                        regardless
                         of
                         income or access to a gym.</p>
                     <div class="bmi-form">
-                        <form action="#">
-                            <input type="number" name="Height/cm" id="" placeholder="Height/cm">
-                            <input type="number" name="Weight/Kg" id="" placeholder="Weight/Kg">
-                            <input type="number" name="Age" id="" placeholder="Age">
-                            <select value="sex-select" class="gender">
+                        <form action="#" class="bmi-form-content">
+                            <input type="number" name="Height/cm" id="" placeholder="Height/cm" class="height">
+                            <input type="number" name="Weight/Kg" id="" placeholder="Weight/Kg" class="weight">
+                            <input type="number" name="Age" id="" placeholder="Age" class="age">
+                            <select value="sex-select" class="gender" class="sex">
                                 <option value="sex" selected>Sex</option>
                                 <option name="male" id="">Male</option>
                                 <option name="female" id="">Female</option>
@@ -182,10 +184,11 @@
                                 <option value="select-activity" selected>Select an activity factor</option>
                                 <option value="activity-gym">Gym</option>
                             </select>
+                            <!-- <a href="#" class="primary-btn calculate">Calculate</a> -->
+                            <input type="submit" value="Calculate" class="primary-btn calculate">
                         </form>
                     </div>
-                    <!-- <a href="#" class="primary-btn calculate">Calculate</a> -->
-                    <input type="submit" value="Calculate" class="primary-btn calculate">
+
                 </div>
             </div>
         </section>
@@ -195,7 +198,7 @@
         <section class="team container">
             <div class="team-text-container">
                 <h3 class="team-title">Meet Our Team</h3>
-                <p class="team-des">We believe fitness should be accessible to everyone, everywhere, regardless of
+                <p class="team-des des">We believe fitness should be accessible to everyone, everywhere, regardless of
                     income or
                     access to a gym.</p>
             </div>
@@ -206,7 +209,7 @@
                     </div>
                     <div class="team-member-details">
                         <h4 class="team-member-name">Jerome Bell</h4>
-                        <p class="team-member-post">Trainer</p>
+                        <p class="team-member-post des">Trainer</p>
                     </div>
                 </div>
                 <div class="team-member">
@@ -264,7 +267,7 @@
             <div class="footer-content">
                 <div class="footer-left">
                     <h1 class="footer-brand">Fitness</h1>
-                    <p class="footer-brand-des">We believe fitness should be accessible to everyone,
+                    <p class="footer-brand-des des">We believe fitness should be accessible to everyone,
                         everywhere, regardless of income or access to a gym. With
                         hundreds of professional workouts.</p>
                 </div>

@@ -141,12 +141,24 @@ header {
     font-size: 4.87rem;
     font-weight: 900;
     margin-bottom: 28px;
+    /* color: rgb(255, 255, 255); */
+    /* font-family: Inter; */
+    /* font-size: 78px; */
+    /* font-weight: 900; */
+    line-height: 120%;
+    /* text-align: left; */
 }
 
 #shape {
     font-family: 'Miama', sans-serif;
-    font-size: 4.87rem;
+    font-size: 9.87rem;
     font-weight: 400;
+    color: rgb(255, 255, 255);
+    /* font-family: Inter; */
+    /* font-size: 78px; */
+    /* font-weight: 900; */
+    line-height: 0%;
+    /* text-align: left; */
 }
 
 .hero-description {
@@ -335,12 +347,18 @@ header {
 
 .run-right .img-container {
     width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .run-right .img-container img {
     width: 100%;
     border-radius: 15px;
-
+    /* object-position: 50% 50%; */
+    height: 300px;
+    object-fit: cover;
+    object-position: -74px 33px;
+    scale: 2.7;
 }
 
 /* bmi-calc styles */
@@ -391,23 +409,29 @@ header {
 
 .bmi-chart-container {}
 
-table,td,th{
+table,
+td,
+th {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-td,th{
-    padding:10px 0;
-    padding-left:15px;
+
+td,
+th {
+    padding: 10px 0;
+    padding-left: 15px;
 }
-td{
+
+td {
     color: rgba(255, 255, 255, 0.5);
-font-family: Inter;
-font-size: .875rem;
-font-weight: 400;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: left;
+    font-family: Inter;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
 }
-table{
+
+table {
     color: gray;
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 350px;
@@ -417,7 +441,6 @@ table{
     border-collapse: collapse;
     /* padding-left: 23px; */
 }
-
 
 .bmi-chart tr {
     width: 100px;
@@ -439,27 +462,49 @@ table{
 }
 
 .bmi-right-title {
-    /* color: white; */
-    /* font-size: 1.8rem; */
     margin-bottom: 15px;
 }
 
 .bmi-right-des {
-    /* color: white; */
-    /* font-size: 1.125rem; */
     margin-bottom: 30px;
 }
 
 .bmi-form {
     margin-bottom: 30px;
-    color: black;
 }
 
-input,select{
-    width: 326px;
+.bmi-form-content {
+    display: grid;
+    grid-template-areas:
+        "height weight"
+        "age sex"
+        "activity activity";
+    gap: 10px;
+}
+
+.height {
+    grid-area: height;
+}
+
+.weight {
+    grid-area: weight;
+}
+
+.age {
+    grid-area: age;
+}
+
+.sex {
+    grid-area: sex;
+}
+
+.activity {
+    grid-area: activity;
+}
+
+input,
+select {
     height: 40px;
-    margin-bottom: 10px;
-    padding-left: 10px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, .6);
@@ -468,7 +513,18 @@ input,select{
     font-size: 1rem;
     font-weight: 400;
     line-height: 22px;
-    cursor:pointer;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+option {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(35 35 35 / 80%);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    cursor: pointer;
 }
 
 ::placeholder {
@@ -478,28 +534,10 @@ input,select{
     line-height: 22px;
     color: rgba(255, 255, 255, .6);
 }
-input:focus,select:focus{
-    outline:none;
-}
 
-
-option {
-    color: rgba(255, 255, 255, 0.6);
-    background-color: blue;
-    background-color: rgb(35 35 35 / 80%);
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 22px;
-    /* cursor:pointer; */
-}
-
-.gender {
-    width: 340px;
-}
-
-.activity {
-    width: 100%;
+input:focus,
+select:focus {
+    outline: none;
 }
 
 input.primary-btn {
@@ -508,10 +546,10 @@ input.primary-btn {
     border: none;
     height: 46px;
     cursor: pointer;
+    margin-top: 35px;
 }
-.calculate{
-    
-}
+
+.calculate {}
 
 /* team styles */
 .team {
@@ -526,20 +564,22 @@ input.primary-btn {
 }
 
 .team-title {
-    color: white;
-    font-size: 3.8rem;
+    font-size: 3rem;
     margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: 900;
+    line-height: 120%;
 }
 
 .team-des {
-    color: white;
-    font-size: 1.125rem;
+    margin-bottom: 58px;
 }
 
 .team-members {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 15px;
+    padding: 18px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     gap: 15px;
@@ -554,7 +594,7 @@ input.primary-btn {
 }
 
 .team-member .img-container img {
-    border-radius: 10px;
+    border-radius: 18px;
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -569,22 +609,26 @@ input.primary-btn {
 }
 
 .team-member-name {
-    font-size: 1rem;
+    font-size: 1.125rem;
+    color: white;
+    line-height: 120%;
 }
 
 .team-member-post {
-    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* footer styles */
 footer {
-    background-color: gray;
+    /* background-color: gray; */
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-content {
     display: flex;
-    padding: 50px 0;
-    gap: 250px;
+    padding-top: 60px;
+    gap: 217px;
+    margin-bottom: 80px;
 }
 
 .footer-left {
@@ -594,12 +638,18 @@ footer {
 .footer-brand {
     color: rgb(230, 83, 60);
     font-size: 3.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 4.375rem;
+    font-weight: 800;
+    line-height: 120%;
+    /* text-align: left; */
 }
 
 .footer-brand-des {
-    color: white;
-    font-size: 1rem;
+    /* color: white;
+    font-size: 1rem; */
 }
 
 .footer-right {
@@ -611,9 +661,12 @@ footer {
 .get-started-container {}
 
 .get-started-title {
-    color: white;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 39px;
 }
 
 .get-started-list {}
@@ -624,20 +677,27 @@ footer {
 
 .get-started-list li a {
     text-decoration: none;
-    color: white;
-    font-size: 1.125rem;
-    line-height: 32px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.43rem;
+    font-weight: 400;
+    line-height: 145%;
 }
 
 hr {
-    color: white;
+    /* color: white; */
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .copy-rights {
-    font-size: 1rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
     text-align: center;
-    padding: 30px 0;
+    padding: 35px 0;
 }
 
 
