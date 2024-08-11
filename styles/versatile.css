@@ -19,7 +19,7 @@ body {
 
 /* header styles */
 header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgb(119 119 119 / 50%) 50% , rgb(0,0,0));
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgb(119 119 119 / 50%) 50%, rgb(0, 0, 0));
     padding-top: 45px;
 }
 
@@ -46,6 +46,31 @@ header {
 
 .dark-1 {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.des {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+
+}
+
+.bmi-title {
+
+    color: rgb(255, 255, 255);
+
+    font-family: Inter;
+
+    font-size: 1.75rem;
+
+    font-weight: 900;
+
+    line-height: 120%;
+
+    /* text-align: left; */
 }
 
 /* navbar styles */
@@ -126,8 +151,8 @@ header {
 
 .hero-description {
     margin-bottom: 35px;
-    font-size: 1rem;
-    font-weight: 400;
+    /* font-size: 1rem; */
+    /* font-weight: 400; */
 }
 
 #download-btn {
@@ -219,14 +244,16 @@ header {
 }
 
 .habit-title {
-    color: white;
     font-size: 3rem;
     margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
 }
 
 .habit-des {
-    color: white;
-    font-size: 1.125rem;
     margin-bottom: 20px;
 }
 
@@ -252,45 +279,58 @@ header {
 .habit-card-title {
     color: white;
     font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.habit-card-des {
-    color: white;
-}
+.habit-card-des {}
 
 /* run styles */
 .run {
     display: flex;
     /* gap: 99px; */
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    padding: 30px;
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    /* border-radius: 10px; */
+    /* padding: 30px; */
     justify-content: space-between;
-    height: 285px;
+    /* height: 317px; */
     margin-bottom: 90px;
+    /* margin-left: 30px; */
+    padding: 30px 0px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
 }
 
 .run-left {
     width: 40%;
+    padding-left: 30px;
+    /* padding-top: 30px; */
 }
 
 .run-title {
-    color: white;
-    font-size: 3.87rem;
+    /* color: white; */
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    /* font-size: 48px; */
+    font-weight: 900;
+    line-height: 120%;
+    /* text-align: left; */
+    margin-bottom: 15px;
 }
 
 .run-des {
-    margin-bottom: 30px;
-    color: white;
-    font-size: 1.125rem;
+    margin-bottom: 35px;
 }
 
-.run-title {}
-
-.run-des {}
+.join-now {
+    padding: 12px 50px;
+}
 
 .run-right {
     width: 435px;
+    padding-right: 30px;
+    /* padding-top: 30px; */
 }
 
 .run-right .img-container {
@@ -311,58 +351,87 @@ header {
 }
 
 .bmi-calc-container {
-    width: 60%;
+    width: 59%;
 }
 
 .bmi-calc-title {
-    font-size: 3.8rem;
-    color: white;
+    font-size: 3rem;
+    /* color: white; */
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    /* font-size: 48px; */
+    font-weight: 900;
+    line-height: 120%;
+    /* text-align: left; */
+    margin-bottom: 15px;
 }
 
-.bmi-calc-des {
-    color: white;
-    font-size: 1.125rem;
-}
+.bmi-calc-des {}
 
 /* bmi styles */
 .bmi {
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     margin-bottom: 90px;
+    background-color: rgb(34, 34, 34);
 }
 
 .bmi-container {
     display: flex;
     justify-content: space-between;
-    padding: 45px 0;
+    padding: 52px 0;
 }
 
 .bmi-left {}
 
 .chart-title {
-    color: white;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
+    /* color: white; */
+    /* font-size: 1.8rem; */
+    margin-bottom: 60px;
 }
 
 .bmi-chart-container {}
 
-.bmi-chart {
-    color: gray;
-    border: 1px solid white;
-    width: 350px;
-    height: 180px;
-    text-align: left;
-    /* padding: 10px 20px; */
+table,td,th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
+td,th{
+    padding:10px 0;
+    padding-left:15px;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: .875rem;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+table{
+    color: gray;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 350px;
+    height: 200px;
+    text-align: left;
+    /* padding: 10px 24px; */
+    border-collapse: collapse;
+    /* padding-left: 23px; */
+}
+
 
 .bmi-chart tr {
     width: 100px;
-    padding: 10px 15px;
 }
 
 .table-heading {
-    color: white;
-
+    /* color: white; */
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+    /* text-align: left; */
+    /* padding-left: 15px; */
 }
 
 .bmi-right {
@@ -370,20 +439,59 @@ header {
 }
 
 .bmi-right-title {
-    color: white;
-    font-size: 1.8rem;
+    /* color: white; */
+    /* font-size: 1.8rem; */
     margin-bottom: 15px;
 }
 
 .bmi-right-des {
-    color: white;
-    font-size: 1.125rem;
+    /* color: white; */
+    /* font-size: 1.125rem; */
     margin-bottom: 30px;
 }
 
 .bmi-form {
     margin-bottom: 30px;
     color: black;
+}
+
+input,select{
+    width: 326px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, .6);
+    border: none;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    cursor:pointer;
+}
+
+::placeholder {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(255, 255, 255, .6);
+}
+input:focus,select:focus{
+    outline:none;
+}
+
+
+option {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: blue;
+    background-color: rgb(35 35 35 / 80%);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    /* cursor:pointer; */
 }
 
 .gender {
@@ -394,22 +502,15 @@ header {
     width: 100%;
 }
 
-input,
-select {
-    width: 326px;
-    height: 40px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    /* margin-right: 10px; */
-}
-
 input.primary-btn {
     padding: 0;
-    width: 135px;
+    width: 181px;
     border: none;
     height: 46px;
     cursor: pointer;
+}
+.calculate{
+    
 }
 
 /* team styles */
@@ -611,7 +712,6 @@ hr {
         font-size: 2rem;
     }
 
-    .habit-des {}
 
     .habit-cards {
         grid-template-columns: repeat(1, 1fr);
