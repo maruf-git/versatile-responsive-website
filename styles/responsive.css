@@ -88,10 +88,11 @@
     }
 
     .habit-title {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
-
-
+    .des {
+        font-size: .81rem;
+    }
     .habit-cards {
         grid-template-columns: repeat(1, 1fr);
         width: 65%;
@@ -111,10 +112,6 @@
 
     .run-title {
         font-size: 2.8rem;
-    }
-
-    .run-des {
-        font-size: 1rem;
     }
 
     .run-right {
