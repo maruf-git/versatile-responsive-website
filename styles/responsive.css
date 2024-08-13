@@ -155,7 +155,9 @@
     .bmi-left {
         margin-bottom: 35px;
     }
-
+    table {
+        width: 300px;
+    }
     .bmi-right {
         width: auto;
     }
