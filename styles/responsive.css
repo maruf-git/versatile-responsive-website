@@ -1,5 +1,5 @@
 /* responsive */
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:375px) {
 
     .container {
         width: 95%;
@@ -23,17 +23,23 @@
     .hero-left {
         width: 100%;
     }
+
     .hero-title {
         font-size: 3rem;
     }
+
     #shape {
         font-size: 6rem;
     }
 
     .hero-description {}
+
     .primary-btn {
-        font-size: 1rem;
+        font-size: .81rem;
+        padding: 12px 22px;
+
     }
+
     #download-btn {}
 
     .hero-right {
@@ -81,6 +87,7 @@
     .habit {
         margin-bottom: 60px;
     }
+
     .habit-text-container {
         width: 85%;
     }
@@ -88,9 +95,11 @@
     .habit-title {
         font-size: 2rem;
     }
+
     .des {
         font-size: .81rem;
     }
+
     .habit-cards {
         grid-template-columns: repeat(1, 1fr);
         width: 65%;
@@ -116,11 +125,13 @@
         width: auto;
         padding: 25px;
     }
+
     .run-right .img-container img {
         object-position: -23px 24px;
         scale: 1.568;
-        height:auto;
+        height: auto;
     }
+
     .join-now {
         width: 100%;
         display: inline-block;
@@ -132,6 +143,7 @@
     .bmi-calc {
         margin-bottom: 35px;
     }
+
     .bmi-calc-container {
         width: 100%;
     }
@@ -141,47 +153,57 @@
     }
 
     .bmi-calc-des {
-        font-size: 1rem;
+        font-size: .81rem;
     }
 
     /* bmi responsive */
     .bmi-container {
         flex-direction: column;
     }
+
     .bmi-title {
         font-size: 1rem;
         margin-bottom: 20px;
     }
+
     .bmi-left {
         margin-bottom: 35px;
     }
+
     table {
         width: 300px;
     }
+
     .bmi-right {
         width: auto;
     }
+
     .bmi-form-content {
         width: 100%;
     }
-    input,select {
-        font-size: .7rem;
+
+    input,
+    select {
+        font-size: .6rem;
     }
+
     ::placeholder {
-        font-size: .7rem;
+        font-size: .6rem;
     }
+
     input.primary-btn {
         margin-top: 20px;
         width: 120%;
     }
 
     /* team responsive */
-   
+
     .team-title {
         font-size: 2rem;
     }
+
     .team-des {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 
     .team-text-container {
@@ -199,7 +221,7 @@
     .team-member-5 {
         grid-row: 2/3;
     }
-   
+
     .team-members {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -230,8 +252,13 @@
         flex-direction: column;
         gap: 30px;
     }
+
     .get-started-list li a {
         line-height: 185%;
+    }
+
+    .copy-rights{
+        font-size:1rem;
     }
 
 }
