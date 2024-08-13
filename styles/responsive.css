@@ -113,7 +113,11 @@
         width: auto;
         padding: 25px;
     }
-
+    .run-right .img-container img {
+        object-position: -23px 24px;
+        scale: 1.568;
+        height:auto;
+    }
     .join-now {
         width: 100%;
         display: inline-block;
