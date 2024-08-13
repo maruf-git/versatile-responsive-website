@@ -223,12 +223,15 @@
     }
 
     .footer-brand-des {
-        font-size: 1.125rem;
+        font-size: .81rem;
     }
 
     .footer-right {
         flex-direction: column;
         gap: 30px;
+    }
+    .get-started-list li a {
+        line-height: 185%;
     }
 
 }
