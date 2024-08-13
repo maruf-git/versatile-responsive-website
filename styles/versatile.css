@@ -227,7 +227,8 @@ header {
     color: rgb(230, 83, 60);
 }
 
-.fa-circle-play,.fa-play {
+.fa-circle-play,
+.fa-play {
     /* background-color: white; */
     display: none;
 }
@@ -240,6 +241,74 @@ header {
 .video-des {
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.81rem;
+}
+
+/* plans style here */
+.plans {
+    margin-bottom: 90px;
+}
+
+.plans-text-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.plans-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.plans-des {}
+
+.plans-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-card {
+    background-color: rgba(13, 13, 13, 1);
+    padding:30px;
+    border:1px solid rgb(230, 83, 60);
+    border-radius:16px;
+}
+
+.plan-name {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 15px;
+    text-align:center;
+}
+.plan-price {
+    color: rgb(230, 83, 60);
+    font-size: 3rem;
+    font-family: Inter;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+small{
+    font-weight: 600;
+}
+.plan-offers {
+    line-height: 35px;
+}
+.fa-check{
+    padding-right:10px;
+}
+.plan-card-2{
+    background-color: rgb(230, 83, 60);
+}
+.plan-name-2,.plan-price-2,.plan-offers-2{
+    color:rgb(255,255,255);
 }
 
 /* habit styles */
@@ -485,7 +554,7 @@ table {
         "height weight"
         "age sex"
         "activity activity"; */
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -509,7 +578,7 @@ table {
     grid-area: activity;
 } */
 
-.activity{
+.activity {
     grid-column: 1/3;
 }
 
@@ -527,26 +596,30 @@ table {
     cursor: pointer;
     padding-left:10px;
 } */
-input,select{
+input,
+select {
     height: 40px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     cursor: pointer;
-    padding-left:10px;
+    padding-left: 10px;
     font-size: 1rem;
 }
-select{
+
+select {
     color: rgba(255, 255, 255, .6);
 }
-input{
+
+input {
     color: rgba(255, 255, 255, .6);
 }
+
 option {
     color: rgba(255, 255, 255, 0.6);
     background-color: rgb(35 35 35 / 80%);
     /* background-color: rgba(255, 255, 255, 0.1); */
- 
+
 }
 
 ::placeholder {
@@ -664,9 +737,11 @@ input.primary-btn {
     color: white;
     line-height: 120%;
 }
-.team-member-name-mobile{
-    display:none;
+
+.team-member-name-mobile {
+    display: none;
 }
+
 .team-member-post {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -781,9 +856,11 @@ hr {
     .hero-left {
         width: 100%;
     }
+
     .hero-title {
         font-size: 3rem;
     }
+
     #shape {
         font-size: 6rem;
     }
@@ -791,13 +868,13 @@ hr {
     .hero-description {
         font-size: 1rem !important;
     }
+
     .primary-btn {
         font-size: 1rem;
         padding: 12px 38px;
     }
-    #download-btn {
 
-    }
+    #download-btn {}
 
     .hero-right {
         width: 100%;
@@ -844,6 +921,7 @@ hr {
     .habit {
         margin-bottom: 60px;
     }
+
     .habit-text-container {
         width: 85%;
     }
@@ -851,9 +929,11 @@ hr {
     .habit-title {
         font-size: 2rem;
     }
+
     .des {
         font-size: .81rem;
     }
+
     .habit-cards {
         grid-template-columns: repeat(1, 1fr);
         width: 65%;
@@ -879,11 +959,13 @@ hr {
         width: auto;
         padding: 25px;
     }
+
     .run-right .img-container img {
         object-position: -23px 24px;
         scale: 1.568;
-        height:auto;
+        height: auto;
     }
+
     .join-now {
         width: 100%;
         display: inline-block;
@@ -895,6 +977,7 @@ hr {
     .bmi-calc {
         margin-bottom: 35px;
     }
+
     .bmi-calc-container {
         width: 100%;
     }
@@ -902,7 +985,8 @@ hr {
     .bmi-calc-title {
         font-size: 2rem;
     }
-/* 
+
+    /* 
     .bmi-calc-des {
         font-size: 1rem;
     } */
@@ -911,40 +995,50 @@ hr {
     .bmi-container {
         flex-direction: column;
     }
+
     .bmi-title {
         font-size: 1rem;
         margin-bottom: 20px;
     }
+
     .bmi-left {
         margin-bottom: 35px;
     }
+
     table {
         width: 300px;
     }
+
     .bmi-right {
         width: auto;
     }
+
     .bmi-form-content {
         width: 100%;
     }
-    input,select {
+
+    input,
+    select {
         font-size: .7rem;
     }
+
     ::placeholder {
         font-size: .7rem;
     }
+
     input.primary-btn {
         margin-top: 20px;
         width: 120%;
     }
 
     /* team responsive */
-   
+
     .team-title {
         font-size: 2rem;
     }
+
     .team-des {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 
     .team-text-container {
@@ -962,7 +1056,7 @@ hr {
     .team-member-5 {
         grid-row: 2/3;
     }
-   
+
     .team-members {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -993,6 +1087,7 @@ hr {
         flex-direction: column;
         gap: 30px;
     }
+
     .get-started-list li a {
         line-height: 185%;
     }
@@ -1258,10 +1353,8 @@ hr {
         line-height: 185%;
     }
 
-    .copy-rights{
-        font-size:1rem;
+    .copy-rights {
+        font-size: 1rem;
     }
 
 }
-
-
