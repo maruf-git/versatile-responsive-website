@@ -245,7 +245,7 @@ header {
 
 /* plans style here */
 .plans {
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 }
 
 .plans-text-container {
@@ -272,6 +272,7 @@ header {
 
 .plan-card {
     background-color: rgba(13, 13, 13, 1);
+    background: rgb(34, 34, 34);
     padding:30px;
     border:1px solid rgb(230, 83, 60);
     border-radius:16px;
@@ -298,6 +299,9 @@ header {
 small{
     font-weight: 600;
 }
+.plan-offers-container{
+    margin-bottom:50px;
+}
 .plan-offers {
     line-height: 35px;
 }
@@ -309,6 +313,16 @@ small{
 }
 .plan-name-2,.plan-price-2,.plan-offers-2{
     color:rgb(255,255,255);
+}
+.get-started {
+    display: inline-block;
+    padding:12px 0;
+    width:100%;
+    text-align:center;
+}
+.get-started-2{
+    background-color:rgb(255,255,255);
+    color:rgb(230, 83, 60);
 }
 
 /* habit styles */
@@ -674,11 +688,10 @@ input.primary-btn {
 .team-members {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-areas:
-        "team-member-1 team-member-2 team-member-3"
+    /* grid-template-areas: "team-member-1 team-member-2 team-member-3"
         "team-member-4 team-member-5 team-member-6"; */
     padding: 18px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(34, 34, 34);
     border-radius: 15px;
     gap: 15px;
 }
