@@ -171,7 +171,7 @@ header {
     border: 1px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     background-color: transparent;
-    padding: 11px 25px;
+    /* padding: 12px 25px; */
     margin-left: 14px;
 }
 
@@ -757,7 +757,7 @@ hr {
 
 
 /* responsive */
-@media only screen and (min-width:375px) and (max-width:576px) {
+@media only screen and (min-width:425px) and (max-width:576px) {
 
     .container {
         width: 95%;
@@ -788,11 +788,16 @@ hr {
         font-size: 6rem;
     }
 
-    .hero-description {}
+    .hero-description {
+        font-size: 1rem !important;
+    }
     .primary-btn {
         font-size: 1rem;
+        padding: 12px 38px;
     }
-    #download-btn {}
+    #download-btn {
+
+    }
 
     .hero-right {
         width: 100%;
@@ -897,10 +902,10 @@ hr {
     .bmi-calc-title {
         font-size: 2rem;
     }
-
+/* 
     .bmi-calc-des {
         font-size: 1rem;
-    }
+    } */
 
     /* bmi responsive */
     .bmi-container {
@@ -995,7 +1000,7 @@ hr {
 }
 
 /* responsive */
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:425px) {
 
     .container {
         width: 95%;
