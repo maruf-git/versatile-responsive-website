@@ -78,12 +78,15 @@
     }
 
     /* habit responsive */
+    .habit {
+        margin-bottom: 60px;
+    }
     .habit-text-container {
         width: 85%;
     }
 
     .habit-title {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
     .des {
         font-size: .81rem;
@@ -106,7 +109,7 @@
     }
 
     .run-title {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 
     .run-right {
@@ -126,12 +129,15 @@
     }
 
     /* bmi-calc responsive */
+    .bmi-calc {
+        margin-bottom: 35px;
+    }
     .bmi-calc-container {
         width: 100%;
     }
 
     .bmi-calc-title {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 
     .bmi-calc-des {
@@ -142,7 +148,10 @@
     .bmi-container {
         flex-direction: column;
     }
-
+    .bmi-title {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
     .bmi-left {
         margin-bottom: 35px;
     }
@@ -150,12 +159,14 @@
     .bmi-right {
         width: auto;
     }
-
+    .bmi-form-content {
+        width: 100%;
+    }
     input,select {
-        font-size: .81rem;
+        font-size: .7rem;
     }
     ::placeholder {
-        font-size: .81rem;
+        font-size: .7rem;
     }
     input.primary-btn {
         margin-top: 20px;
