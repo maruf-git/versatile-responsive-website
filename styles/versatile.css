@@ -221,9 +221,15 @@ header {
     left: 25px;
 }
 
-.fa-circle {
+.fa-circle,
+.fa-circle-play {
     font-size: 2.5rem;
     color: rgb(230, 83, 60);
+}
+
+.fa-circle-play,.fa-play {
+    /* background-color: white; */
+    display: none;
 }
 
 .video-tutorial h3 {
@@ -475,14 +481,15 @@ table {
 
 .bmi-form-content {
     display: grid;
-    grid-template-areas:
+    /* grid-template-areas:
         "height weight"
         "age sex"
-        "activity activity";
+        "activity activity"; */
+    grid-template-columns: repeat(2,1fr);
     gap: 10px;
 }
 
-.height {
+/* .height {
     grid-area: height;
 }
 
@@ -500,10 +507,14 @@ table {
 
 .activity {
     grid-area: activity;
+} */
+
+.activity{
+    grid-column: 1/3;
 }
 
-input,
-select {
+/* input{} */
+/* select {
     height: 40px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -514,24 +525,35 @@ select {
     font-weight: 400;
     line-height: 22px;
     cursor: pointer;
-    padding: 0 10px;
+    padding-left:10px;
+} */
+input,select{
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    cursor: pointer;
+    padding-left:10px;
+    font-size: 1rem;
 }
-
+select{
+    color: rgba(255, 255, 255, .6);
+}
+input{
+    color: rgba(255, 255, 255, .6);
+}
 option {
     color: rgba(255, 255, 255, 0.6);
     background-color: rgb(35 35 35 / 80%);
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 22px;
-    cursor: pointer;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+ 
 }
 
 ::placeholder {
     font-family: Inter;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 22px;
+    /* font-weight: 400; */
+    /* line-height: 22px; */
     color: rgba(255, 255, 255, .6);
 }
 
@@ -579,6 +601,9 @@ input.primary-btn {
 .team-members {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-areas:
+        "team-member-1 team-member-2 team-member-3"
+        "team-member-4 team-member-5 team-member-6"; */
     padding: 18px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
@@ -587,7 +612,33 @@ input.primary-btn {
 
 .team-member {
     position: relative;
+
 }
+
+/* .team-member-1 {
+    grid-area: team-member-1;
+}
+
+.team-member-2 {
+    grid-area: team-member-2;
+}
+
+.team-member-3 {
+    grid-area: team-member-3;
+}
+
+.team-member-4 {
+    grid-area: team-member-4;
+}
+
+.team-member-5 {
+    grid-area: team-member-5;
+}
+
+.team-member-6 {
+    grid-area: team-member-6;
+} */
+
 
 .team-member .img-container {
     width: 100%;
@@ -613,7 +664,9 @@ input.primary-btn {
     color: white;
     line-height: 120%;
 }
-
+.team-member-name-mobile{
+    display:none;
+}
 .team-member-post {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -701,177 +754,3 @@ hr {
 }
 
 
-/* responsive */
-@media only screen and (max-width:576px) {
-
-    .container {
-        width: 95%;
-    }
-
-    /* navbar responsive */
-    .menu {
-        display: none;
-    }
-
-    .bars {
-        display: block;
-    }
-
-    /* hero responsive */
-    .hero {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .hero-left {
-        width: 100%;
-    }
-
-    .hero-title {
-        color: rgb(255, 255, 255);
-        font-size: 1.87rem;
-        font-weight: 900;
-    }
-
-    #shape {
-        font-size: 1.87rem;
-        font-weight: 400;
-    }
-
-    .hero-description {}
-
-    #download-btn {}
-
-    .hero-right {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .video {
-        padding: 12px 25px;
-        width: 130px;
-        height: 60px;
-    }
-
-    .video-count {
-
-        top: 38px;
-        right: 4px;
-    }
-
-    .video-tutorial {
-        top: 263px;
-    }
-
-    /* habit responsive */
-    .habit-text-container {
-        width: 85%;
-    }
-
-    .habit-title {
-        font-size: 2rem;
-    }
-
-
-    .habit-cards {
-        grid-template-columns: repeat(1, 1fr);
-        width: 65%;
-    }
-
-    /* run responsive */
-    .run {
-        flex-direction: column;
-        height: auto;
-        padding: 0;
-    }
-
-    .run-left {
-        width: auto;
-        padding: 25px;
-    }
-
-    .run-title {
-        font-size: 2.8rem;
-    }
-
-    .run-des {
-        font-size: 1rem;
-    }
-
-    .run-right {
-        width: auto;
-        padding: 25px;
-    }
-
-    .join-now {}
-
-    /* bmi-calc responsive */
-    .bmi-calc-container {
-        width: 100%;
-    }
-
-    .bmi-calc-title {
-        font-size: 2.8rem;
-    }
-
-    .bmi-calc-des {
-        font-size: 1rem;
-    }
-
-    /* bmi responsive */
-    .bmi-container {
-        flex-direction: column;
-    }
-
-    .bmi-left {
-        margin-bottom: 35px;
-    }
-
-    .bmi-right {
-        width: auto;
-    }
-
-    input,
-    select {
-        width: 186px;
-    }
-
-    .gender {
-        width: 200px;
-    }
-
-    /* team responsive */
-    .team-text-container {
-        width: 95%;
-    }
-
-    .team-title {
-        font-size: 2.8rem;
-    }
-
-    .team-des {}
-
-    .team-members {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    /* footer responsive */
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .footer-left {
-        width: 95%;
-    }
-
-    .footer-brand-des {
-        font-size: 1.125rem;
-    }
-
-    .footer-right {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-}
