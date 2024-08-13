@@ -23,16 +23,11 @@
     .hero-left {
         width: 100%;
     }
-
     .hero-title {
-        color: rgb(255, 255, 255);
-        font-size: 1.87rem;
-        font-weight: 900;
+        font-size: 3rem;
     }
-
     #shape {
-        font-size: 1.87rem;
-        font-weight: 400;
+        font-size: 6rem;
     }
 
     .hero-description {}
