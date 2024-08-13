@@ -176,6 +176,14 @@
     }
 
     /* team responsive */
+   
+    .team-title {
+        font-size: 2rem;
+    }
+    .team-des {
+        margin-bottom:0;
+    }
+
     .team-text-container {
         width: 95%;
     }
@@ -184,12 +192,6 @@
         display: none;
     }
 
-    .team-member-2 {
-        /* grid-row: 1/2; */
-    }
-
-    .team-member-3 {}
-
     .team-member-4 {
         display: none;
     }
@@ -197,15 +199,7 @@
     .team-member-5 {
         grid-row: 2/3;
     }
-
-    .team-member-6 {}
-
-    .team-title {
-        font-size: 2.8rem;
-    }
-
-    .team-des {}
-
+   
     .team-members {
         grid-template-columns: repeat(1, 1fr);
     }
