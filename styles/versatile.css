@@ -740,6 +740,7 @@ footer {
 hr {
     /* color: white; */
     border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
 }
 
 .copy-rights {
@@ -751,6 +752,244 @@ hr {
     letter-spacing: 0.3px;
     text-align: center;
     padding: 35px 0;
+}
+
+/* responsive */
+@media only screen and (max-width:576px) {
+
+    .container {
+        width: 95%;
+    }
+
+    /* navbar responsive */
+    .menu {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    /* hero responsive */
+    .hero {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+    .hero-title {
+        font-size: 3rem;
+    }
+    #shape {
+        font-size: 6rem;
+    }
+
+    .hero-description {}
+    .primary-btn {
+        font-size: 1rem;
+    }
+    #download-btn {}
+
+    .hero-right {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .video {
+        padding: 12px 25px;
+        width: 130px;
+        height: 60px;
+    }
+
+    .video-count {
+
+        top: 38px;
+        right: 4px;
+    }
+
+    .video-tutorial {
+        top: 263px;
+    }
+
+    .fa-circle {
+        display: none;
+    }
+
+    /* .fa-circle-play{
+        display:inline-block;
+    } */
+    .fa-play {
+        display: inline-block;
+        border: 1px solid rgb(230, 83, 60);
+        padding: 10px 12px;
+        border-radius: 50%;
+        background-color: rgb(230, 83, 60);
+        /* font-size: 17px; */
+    }
+
+    .video-des {
+        font-size: 0.76rem;
+    }
+
+    /* habit responsive */
+    .habit {
+        margin-bottom: 60px;
+    }
+    .habit-text-container {
+        width: 85%;
+    }
+
+    .habit-title {
+        font-size: 2rem;
+    }
+    .des {
+        font-size: .81rem;
+    }
+    .habit-cards {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+    }
+
+    /* run responsive */
+    .run {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    .run-left {
+        width: auto;
+        padding: 25px;
+    }
+
+    .run-title {
+        font-size: 2rem;
+    }
+
+    .run-right {
+        width: auto;
+        padding: 25px;
+    }
+    .run-right .img-container img {
+        object-position: -23px 24px;
+        scale: 1.568;
+        height:auto;
+    }
+    .join-now {
+        width: 100%;
+        display: inline-block;
+        padding: 12px 0px;
+        text-align: center;
+    }
+
+    /* bmi-calc responsive */
+    .bmi-calc {
+        margin-bottom: 35px;
+    }
+    .bmi-calc-container {
+        width: 100%;
+    }
+
+    .bmi-calc-title {
+        font-size: 2rem;
+    }
+
+    .bmi-calc-des {
+        font-size: 1rem;
+    }
+
+    /* bmi responsive */
+    .bmi-container {
+        flex-direction: column;
+    }
+    .bmi-title {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .bmi-left {
+        margin-bottom: 35px;
+    }
+    table {
+        width: 300px;
+    }
+    .bmi-right {
+        width: auto;
+    }
+    .bmi-form-content {
+        width: 100%;
+    }
+    input,select {
+        font-size: .7rem;
+    }
+    ::placeholder {
+        font-size: .7rem;
+    }
+    input.primary-btn {
+        margin-top: 20px;
+        width: 120%;
+    }
+
+    /* team responsive */
+   
+    .team-title {
+        font-size: 2rem;
+    }
+    .team-des {
+        margin-bottom:0;
+    }
+
+    .team-text-container {
+        width: 95%;
+    }
+
+    .team-member-1 {
+        display: none;
+    }
+
+    .team-member-4 {
+        display: none;
+    }
+
+    .team-member-5 {
+        grid-row: 2/3;
+    }
+   
+    .team-members {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-member-name-desk {
+        display: none;
+    }
+
+    .team-member-name-mobile {
+        display: block;
+    }
+
+    /* footer responsive */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-left {
+        width: 95%;
+    }
+
+    .footer-brand-des {
+        font-size: .81rem;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .get-started-list li a {
+        line-height: 185%;
+    }
+
 }
 
 
