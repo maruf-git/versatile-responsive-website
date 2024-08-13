@@ -252,6 +252,7 @@ header {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .plans-title {
     font-size: 3rem;
     margin-bottom: 15px;
@@ -273,9 +274,10 @@ header {
 .plan-card {
     background-color: rgba(13, 13, 13, 1);
     background: rgb(34, 34, 34);
-    padding:30px;
-    border:1px solid rgb(230, 83, 60);
-    border-radius:16px;
+    padding: 30px;
+    border: 1px solid rgb(230, 83, 60);
+    border-radius: 16px;
+    width: 25%;
 }
 
 .plan-name {
@@ -285,8 +287,9 @@ header {
     font-weight: 900;
     line-height: 120%;
     margin-bottom: 15px;
-    text-align:center;
+    text-align: center;
 }
+
 .plan-price {
     color: rgb(230, 83, 60);
     font-size: 3rem;
@@ -296,33 +299,43 @@ header {
     text-align: center;
     margin-bottom: 30px;
 }
-small{
+
+small {
     font-weight: 600;
 }
-.plan-offers-container{
-    margin-bottom:50px;
+
+.plan-offers-container {
+    margin-bottom: 50px;
 }
+
 .plan-offers {
     line-height: 35px;
 }
-.fa-check{
-    padding-right:10px;
+
+.fa-check {
+    padding-right: 10px;
 }
-.plan-card-2{
+
+.plan-card-2 {
     background-color: rgb(230, 83, 60);
 }
-.plan-name-2,.plan-price-2,.plan-offers-2{
-    color:rgb(255,255,255);
+
+.plan-name-2,
+.plan-price-2,
+.plan-offers-2 {
+    color: rgb(255, 255, 255);
 }
+
 .get-started {
     display: inline-block;
-    padding:12px 0;
-    width:100%;
-    text-align:center;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
 }
-.get-started-2{
-    background-color:rgb(255,255,255);
-    color:rgb(230, 83, 60);
+
+.get-started-2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(230, 83, 60);
 }
 
 /* habit styles */
@@ -844,7 +857,7 @@ hr {
 
 
 
-/* responsive */
+/* mobile responsive */
 @media only screen and (min-width:425px) and (max-width:576px) {
 
     .container {
@@ -928,6 +941,25 @@ hr {
 
     .video-des {
         font-size: 0.76rem;
+    }
+
+
+    /* plans responsive */
+    .plans-title {
+        font-size: 2rem;
+    }
+
+    .plans-container {
+        flex-direction: column;
+    }
+
+    .plan-card {
+        margin-bottom: 30px;
+        width: auto;
+    }
+
+    .get-started {
+        padding: 12px 0;
     }
 
     /* habit responsive */
@@ -1107,7 +1139,7 @@ hr {
 
 }
 
-/* responsive */
+/* mobile responsive 2 */
 @media only screen and (max-width:425px) {
 
     .container {
@@ -1190,6 +1222,28 @@ hr {
 
     .video-des {
         font-size: 0.76rem;
+    }
+
+    /* plans responsive */
+    .plans {
+        margin-bottom: 40px;
+    }
+
+    .plans-title {
+        font-size: 2rem;
+    }
+
+    .plans-container {
+        flex-direction: column;
+    }
+
+    .plan-card {
+        margin-bottom: 30px;
+        width: auto;
+    }
+
+    .get-started {
+        padding: 12px 0;
     }
 
     /* habit responsive */
