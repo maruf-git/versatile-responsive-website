@@ -278,8 +278,8 @@ header {
     border: 1px solid rgb(230, 83, 60);
     border-radius: 16px;
     width: 25%;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 .plan-name {
@@ -333,7 +333,7 @@ small {
     padding: 12px 0;
     width: 100%;
     text-align: center;
-    margin-top:auto;
+    margin-top: auto;
 }
 
 .get-started-2 {
@@ -351,7 +351,7 @@ small {
 }
 
 .habit-text-container {
-    width: 55%;
+    /* width: 55%; */
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
@@ -413,14 +413,15 @@ small {
     /* height: 317px; */
     margin-bottom: 90px;
     /* margin-left: 30px; */
-    padding: 30px 0px;
+    padding: 30px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
+    align-items: center;
 }
 
 .run-left {
     width: 40%;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     /* padding-top: 30px; */
 }
 
@@ -437,15 +438,16 @@ small {
 }
 
 .run-des {
-    margin-bottom: 44px;
+    margin-bottom: 32px;
 }
+
 .join-now {
     padding: 12px 50px;
 }
 
 .run-right {
     width: 435px;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     /* padding-top: 30px; */
 }
 
@@ -670,7 +672,7 @@ input.primary-btn {
     border: none;
     height: 46px;
     cursor: pointer;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .calculate {}
@@ -964,9 +966,11 @@ hr {
         flex-direction: column;
         gap: 30px;
     }
+
     .plan-offers {
         line-height: 30px;
     }
+
     .plan-card {
         /* margin-bottom: 30px; */
         width: auto;
@@ -1269,9 +1273,11 @@ hr {
         /* margin-bottom: 30px; */
         width: auto;
     }
+
     .plan-offers {
         line-height: 30px;
     }
+
     .get-started {
         padding: 12px 0;
     }
@@ -1462,4 +1468,34 @@ hr {
         font-size: 1rem;
     }
 
+}
+
+/* desktop responsive */
+
+/* hero section desktop responsive */
+@media only screen and (min-width:992px) and (max-width:1106px) {
+    .hero-title {
+        font-size: 3.87rem;
+    }
+
+    #shape {
+        font-size: 8.87rem;
+    }
+}
+
+/* run section desktop responsive */
+@media only screen and (min-width:992px) and (max-width:1040px) {
+    .run-right .img-container img {
+        height: 347px;
+        object-position: -118px 33px;
+
+    }
+}
+
+@media only screen and (min-width:1041px) and (max-width:1315px) {
+    .run-right .img-container img {
+        height: 325px;
+        object-position: -95px 33px;
+        
+    }
 }
