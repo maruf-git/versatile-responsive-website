@@ -984,7 +984,9 @@ hr {
     .habit {
         margin-bottom: 60px;
     }
-
+    .habit-br{
+        display:none;
+    }
     .habit-text-container {
         width: 85%;
     }
@@ -1286,7 +1288,9 @@ hr {
     .habit {
         margin-bottom: 60px;
     }
-
+    .habit-br{
+        display: none;
+    }
     .habit-text-container {
         width: 85%;
     }
